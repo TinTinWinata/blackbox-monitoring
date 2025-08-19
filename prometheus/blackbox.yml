@@ -1,0 +1,13 @@
+modules:
+  http_2xx:
+    prober: http
+    timeout: 5s
+    http:
+      method: GET
+      valid_status_codes: []   # default 2xx/3xx considered success
+  tcp_connect:
+    prober: tcp
+    timeout: 5s
+  icmp_ping:
+    prober: icmp
+    timeout: 5s
